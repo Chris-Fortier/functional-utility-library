@@ -218,6 +218,11 @@ function alphabeticalOrder(arr) {
 }
 
 // Split a String into an Array Using the split Method
+function splitify(str) {
+   var output = str.split(/\W/);
+   console.log(output);
+   return output;
+}
 
 // Combine an Array into a String Using the join Method
 
