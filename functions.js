@@ -243,5 +243,11 @@ function urlSlug(title) {
 }
 
 // Use the every Method to Check that Every Element in an Array Meets a Criteria
+function checkIfAllGreaterThan(arr, threshold) {
+   // This will check if all values in the array are greater than a given threshold.
+   return arr.every(function (curVal) {
+      return curVal > threshold;
+   });
+}
 
 // Use the some Method to Check that Any Elements in an Array Meet a Criteria
