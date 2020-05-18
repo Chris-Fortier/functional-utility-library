@@ -184,7 +184,6 @@ function getAverageRatingByDirector(director) {
       (sum, movie) => sum + parseFloat(movie.imdbRating),
       0
    );
-   console.log(ratingSum);
    var averageRating = ratingSum / directorMovies.length;
    var output =
       director +
@@ -193,11 +192,24 @@ function getAverageRatingByDirector(director) {
       " movie(s) with an average rating of " +
       averageRating;
 
-   // console.log(averageRating);
+   console.log(averageRating);
    return output;
 }
 
 // Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem
+function getSquaresOfPositiveIntegers(arr) {
+   // This returns a list of the squares of all the positive integers.
+
+   var onlyPositive = arr.filter((item) => item > 0); // filter the positive numbers
+
+   var onlyInteger = onlyPositive.filter(
+      (item) => String(item).indexOf(".") == -1 // filter the decimal numbers
+   );
+
+   var squareList = onlyInteger.map((item) => item * item); // get the squares
+
+   return squareList;
+}
 
 // Sort an Array Alphabetically using the sort Method
 
