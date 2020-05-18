@@ -225,6 +225,12 @@ function splitify(str) {
 }
 
 // Combine an Array into a String Using the join Method
+function sentensify(array) {
+   // var output = str.split(/\W/);
+   output = array.join(" ");
+   console.log(output);
+   return output;
+}
 
 // Apply Functional Programming to Convert Strings to URL Slugs
 
