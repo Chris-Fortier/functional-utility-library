@@ -233,6 +233,14 @@ function sentensify(array) {
 }
 
 // Apply Functional Programming to Convert Strings to URL Slugs
+function urlSlug(title) {
+   var makeLower = title.toLowerCase();
+   var removeSpaces = makeLower.split(" ");
+   var removeBlankItems = removeSpaces.filter((x) => x.length > 0);
+   var joinWithDashes = removeBlankItems.join("-");
+   console.log(joinWithDashes);
+   return joinWithDashes;
+}
 
 // Use the every Method to Check that Every Element in an Array Meets a Criteria
 
