@@ -251,3 +251,9 @@ function checkIfAllGreaterThan(arr, threshold) {
 }
 
 // Use the some Method to Check that Any Elements in an Array Meet a Criteria
+function checkIfSomeGreaterThan(arr, threshold) {
+   // This will check if some values in the array are greater than a given threshold.
+   return arr.some(function (curVal) {
+      return curVal > threshold;
+   });
+}
