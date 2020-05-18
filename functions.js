@@ -1,5 +1,26 @@
 // Implement the filter Method on a Prototype
 
+Array.prototype.myFilter = function (callback) {
+   // this is my filter function that returns a new array that only contains items that pass the filter
+   var newArray = [];
+   for (let i = 0; i < this.length; i++) {
+      if (callback(this[i])) {
+         newArray.push(this[i]);
+      }
+   }
+   return newArray;
+};
+
+function filterOutLowValues(inputArray, threshold) {
+   //Filters out any value in the array that is lower than threshold.
+
+   var outputArray = inputArray.myFilter(function (item) {
+      return item >= threshold;
+   }); // runs the filter function on each item in the array
+
+   return outputArray;
+}
+
 // Return Part of an Array Using the slice Method
 
 // Remove Elements from an Array Using slice Instead of splice
