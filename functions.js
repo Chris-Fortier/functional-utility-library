@@ -22,6 +22,9 @@ function filterOutLowValues(inputArray, threshold) {
 }
 
 // Return Part of an Array Using the slice Method
+function sliceArray(inputArray, beginSlice, endSlice) {
+   return inputArray.slice(beginSlice, endSlice);
+}
 
 // Remove Elements from an Array Using slice Instead of splice
 
