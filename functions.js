@@ -212,6 +212,10 @@ function getSquaresOfPositiveIntegers(arr) {
 }
 
 // Sort an Array Alphabetically using the sort Method
+function alphabeticalOrder(arr) {
+   // This sorts an array in alphabetical order.
+   return arr.sort();
+}
 
 // Split a String into an Array Using the split Method
 
