@@ -27,8 +27,19 @@ function sliceArray(inputArray, beginSlice, endSlice) {
 }
 
 // Remove Elements from an Array Using slice Instead of splice
+function nonMutatingSplice(inputArray, beginSlice, endSlice) {
+   output = inputArray.slice(beginSlice, endSlice);
+   console.log(output);
+   return output;
+}
 
 // Combine Two Arrays Using the concat Method
+function nonMutatingConcat(original, attach) {
+   // Concatenate first array to second array
+   output = original.concat(attach);
+   console.log(output);
+   return output;
+}
 
 // Add Elements to the End of an Array Using concat Instead of push
 
