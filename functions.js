@@ -42,6 +42,11 @@ function nonMutatingConcat(original, attach) {
 }
 
 // Add Elements to the End of an Array Using concat Instead of push
+function nonMutatingPush(original, newItem) {
+   output = original.concat(newItem);
+   console.log(output);
+   return output;
+}
 
 // Use the reduce Method to Analyze Data
 
